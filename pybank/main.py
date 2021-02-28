@@ -62,11 +62,11 @@ with open(budget_data_path) as budget_data_file:
     lowest = min(monthly_change)
 
 #print statements
-print( "Financial Analysis")
-print("----------------------------")
-print("Total Months: {total_months}")
-print("Total Amount: ${net_total}")
-print("Greatest Incrase in Profits:,{monthly_increase}, (${highest})")
-print("Greatest Decrease in Profits:, {monthly_decrease},${lowest})")
+print(f"Financial Analysis")
+print(f"----------------------------")
+print(f"Total Months: {total_months}")
+print(f"Total Amount: ${net_total}")
+print(f"Greatest Incrase in Profits:,{monthly_increase}, (${highest})")
+print(f"Greatest Decrease in Profits:, {monthly_decrease},${lowest})")
 
 #
