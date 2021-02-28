@@ -71,10 +71,10 @@ print(f"Greatest Incrase in Profits:,{monthly_increase}, (${highest})")
 print(f"Greatest Decrease in Profits:, {monthly_decrease},${lowest})")
 
 # write edited data to file
-output_file = os.path.join("../pybank/analysis/budget_data.csv")
+output_file = os.path.join("../pybank/analysis/budget_data.txt")
 
 #open file as text file
-with open(output_file,'w',) as txtfile:
+with open(output_file, 'w',) as txtfile:
     #format
     txtfile.write(f"Financial Analysis\n")
     txtfile.write(f"----------------------------\n")
