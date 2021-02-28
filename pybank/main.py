@@ -67,18 +67,22 @@ print(f"Financial Analysis")
 print(f"----------------------------")
 print(f"Total Months: {total_months}")
 print(f"Total Amount: ${net_total}")
+print(f"Average Change: ${average_changes}")
 print(f"Greatest Incrase in Profits:,{monthly_increase}, (${highest})")
 print(f"Greatest Decrease in Profits:, {monthly_decrease},${lowest})")
 
 # write edited data to file
-output_file = os.path.join("../pybank/analysis/budget_data.txt")
+output_file = os.path.join("../pybank/analysis/budget_data_reviewed.txt")
 
 #open file as text file
 with open(output_file, 'w',) as txtfile:
+
     #format
     txtfile.write(f"Financial Analysis\n")
     txtfile.write(f"----------------------------\n")
     txtfile.write(f"Total Months: {total_months}\n")
     txtfile.write(f"Total Amount: ${net_total}\n")
+    txtfile.write(f"Average Change: ${average_changes}\n")
     txtfile.write(f"Greatest Incrase in Profits:,{monthly_increase}, (${highest})\n")
     txtfile.write(f"Greatest Decrease in Profits:, {monthly_decrease},${lowest})\n")
+    
