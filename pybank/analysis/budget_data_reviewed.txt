@@ -1,0 +1,7 @@
+Financial Analysis
+----------------------------
+Total Months: {total_months}
+Total Amount: ${net_total}
+Average Change: ${average_changes}
+Greatest Incrase in Profits:,{monthly_increase}, (${highest})
+Greatest Decrease in Profits:, {monthly_decrease},${lowest})
