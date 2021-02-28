@@ -55,6 +55,7 @@ with open(budget_data_path) as budget_data_file:
         if int(row[1] < greatest_increase:
             greatest_increase = int(row[1])
             monthly_decrease = row [0]
+
     #determine the mean and the date
     average_changes = sum(monthly_change) / len(monthly_change)
 
@@ -69,4 +70,15 @@ print(f"Total Amount: ${net_total}")
 print(f"Greatest Incrase in Profits:,{monthly_increase}, (${highest})")
 print(f"Greatest Decrease in Profits:, {monthly_decrease},${lowest})")
 
-#
+# write edited data to file
+output_file = os.path.join("../pybank/analysis/budget_data.csv")
+
+#open file as text file
+with open(output_file,'w',) as txtfile:
+    #format
+    txtfile.write(f"Financial Analysis\n")
+    txtfile.write(f"----------------------------\n")
+    txtfile.write(f"Total Months: {total_months}\n")
+    txtfile.write(f"Total Amount: ${net_total}\n")
+    txtfile.write(f"Greatest Incrase in Profits:,{monthly_increase}, (${highest})\n")
+    txtfile.write(f"Greatest Decrease in Profits:, {monthly_decrease},${lowest})\n")
