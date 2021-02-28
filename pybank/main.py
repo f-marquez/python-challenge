@@ -46,7 +46,7 @@ with open(budget_data_path) as budget_data_file:
         net_total = net_total + int(row[1])
 
         # determine the change for months
-        revenue_change = int(row [1] - previous_row)
+        revenue_change = int(row [1]) - previous_row
         monthly_change.append(revenue_change)
         previous_row = int(row [1])
         monthly_count.append(row[0])
@@ -61,11 +61,12 @@ with open(budget_data_path) as budget_data_file:
     highest = max(monthly_change)
     lowest = min(monthly_change)
 
-#print statemments
+#print statements
 print( "Financial Analysis")
 print("----------------------------")
 print("Total Months: {total_months}")
 print("Total Amount: ${net_total}")
 print("Greatest Incrase in Profits:,{monthly_increase}, (${highest})")
 print("Greatest Decrease in Profits:, {monthly_decrease},${lowest})")
-    
+
+#
