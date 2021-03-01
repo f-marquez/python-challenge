@@ -24,6 +24,7 @@ PyBank
     * The greatest decrease in losses (date and amount) over the entire period
 
 PyPoll
+(Please refer to Main1.py. I could not get main.py off of the repository)
 
 * Created a Python script to assist rural town in modernizing its vote counting process. 
 * Created a Python script for analyzing the poll data called election_data.csv. The dataset is composed of three columns: Voter ID, County, and Candidate.
