@@ -11,7 +11,7 @@ GETTING STARTED
             * A new file called main.py. 
             * A "Resources" folder that contains the CSV files used. 
             * An "analysis" folder that contains your text file that has the results from your analysis.
-    * Push the above changes to GitHub or GitLab.
+    * Lastly, pushed the above changes to GitHub or GitLab.
 
 PyBank
 
